@@ -1,7 +1,8 @@
 const router = require('express').Router();
-const db = require('../db/db.json');
 const fs = require('fs');
 const uuid = require('uuid');
+
+// ------
 
 router.get('/notes', (req, res) => {
     // const notes = fs.readFile('/db.db.json');
@@ -47,5 +48,7 @@ router.delete('/notes/:id', (req, res) => {
     })
     res.send()
 });
+
+// ------
 
 module.exports = router
